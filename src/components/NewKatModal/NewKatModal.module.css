@@ -1,0 +1,54 @@
+.newKatModal{
+    background-color: var(--dark-color);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 9999;
+}
+
+.newKatModal span{
+    color: var(--light-color);
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.newKatModal .katInput{
+    color: var(--light-color);
+    background: none;
+    font-size: 1.1rem;
+    border: 1px solid var(--soft-dark-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: border .3s ease;
+}
+
+.newKatModal .katInput.invalid{
+    border: 1px solid var(--warning-color);
+}
+
+.newKatModal .addKatButton{
+    border-radius: 10px;
+    background-color: var(--light-color);
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.newKatModal .closeButton i{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    color: var(--light-color);
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 99;
+    font-size: 1.2rem;
+}

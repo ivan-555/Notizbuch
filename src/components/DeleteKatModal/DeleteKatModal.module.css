@@ -1,0 +1,45 @@
+.deleteKatModal{
+    background-color: var(--dark-color);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    border-radius: 20px;
+    z-index: 9999;
+}
+
+.deleteKatModal span{
+    color: var(--light-color);
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.deleteKatModal span.warning{
+    font-size: .9rem;
+    color: var(--warning-color);
+}
+
+.deleteKatModal .deleteKatButton{
+    border-radius: 10px;
+    background-color: var(--light-color);
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.deleteKatModal .closeButton i{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    color: var(--light-color);
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 99;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,101 @@
+.newNoteModal{
+    background-color: var(--dark-color);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    z-index: 9999;
+}
+
+.newNoteModal span{
+    color: var(--light-color);
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.newNoteModal .titelInput,
+.newNoteModal .textArea{
+    color: var(--light-color);
+    background: none;
+    font-size: 1.1rem;
+    border: 1px solid var(--soft-dark-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: border .3s ease;
+}
+.newNoteModal .textArea::placeholder,
+.newNoteModal .titelInput::placeholder{
+    color: var(--light-color);
+    opacity: 0.5;
+}
+.newNoteModal .titelInput.invalid,
+.newNoteModal .textArea.invalid{
+    border: 1px solid var(--warning-color);
+}
+
+.newNoteModal .textArea{
+    flex-grow: 1;
+    resize: none;
+}
+
+.newNoteModal .dropdown,
+.newNoteModal .addNoteButton{
+    border-radius: 10px;
+    background-color: var(--light-color);
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.newNoteModal i.favoriteButton{
+    color: var(--light-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: all .5s ease;
+}
+.newNoteModal i.favoriteButton.active{
+    color: var(--favorite-color);
+    font-weight: 600;
+    animation: bounce .5s ease;
+}
+
+@keyframes bounce {
+    0%{
+        scale: 1;
+    }
+    25%{
+        scale: 1.15;
+    }
+    50%{
+        scale: 1;
+    }
+    75%{
+        scale: 1.15;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+.newNoteModal .closeButton i{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    color: var(--light-color);
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 99;
+    font-size: 1.2rem;
+}

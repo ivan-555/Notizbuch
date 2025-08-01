@@ -1,0 +1,8 @@
+:root{
+    --light-color: rgb(247, 246, 246);
+    --bg-color: rgba(0, 0, 0, 0.06);
+    --dark-color: rgb(75, 73, 72);
+    --soft-dark-color: rgb(107, 106, 106); /* borders */
+    --warning-color: rgba(243, 124, 124, 0.68); /* invalid */
+    --favorite-color: rgb(224, 160, 57);
+}

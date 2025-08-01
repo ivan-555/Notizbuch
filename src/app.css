@@ -1,0 +1,17 @@
+.notebook{
+    height: 100vh;
+    display: flex;
+    background: var(--bg-color);
+}
+
+.notebook .newNoteButton i{
+    padding: 15px;
+    font-size: 1.3rem;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}

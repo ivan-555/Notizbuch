@@ -1,0 +1,77 @@
+.sidebar{
+    color: var(--dark-color);
+    background: var(--light-color);
+    margin: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 0 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h1{
+    padding: 10px 20px;
+}
+
+.sidebar li{
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.sidebar li.active{
+    background: var(--dark-color);
+    color: var(--light-color);
+}
+
+.sidebar li i{
+    width: 10px;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar .labelsText{
+    font-weight: bold;
+    font-size: .9rem;
+    margin: 30px 10px 10px 20px;
+    display: inline-block;
+}
+
+.sidebar .filters{
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.sidebar .filters i.tag{
+    transform: rotate(135deg);
+}
+
+.sidebar .filters .deleteButton{
+    font-size: .9rem;
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+}
+
+.sidebar .addLabelButton{
+    margin: 15px 10px 30px 20px;
+    background: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
