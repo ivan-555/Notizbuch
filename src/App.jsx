@@ -4,7 +4,7 @@ import { useState } from "react"
 // Styles
 import "./variables.css"
 import "./index.css"
-import styles from "./app.css"
+import styles from "./app.module.css"
 // Components
 import NewNoteModal from "./components/NewNoteModal/NewNoteModal"
 import NewKatModal from "./components/NewKatModal/NewKatModal"
