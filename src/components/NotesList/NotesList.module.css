@@ -42,3 +42,20 @@
 .notesList .emptyTrashButton i{
     color: inherit;
 }
+
+/* At toggleable Sidebar */
+@media (max-width: 1145px) {
+    .notesList{
+        margin-top: 75px;
+    }
+
+    .notesList .inner{
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .notesList .inner{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}

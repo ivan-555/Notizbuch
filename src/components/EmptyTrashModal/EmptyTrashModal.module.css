@@ -10,6 +10,11 @@
     padding: 30px;
     border-radius: 20px;
     z-index: 9999;
+    min-width: 300px;
+}
+
+.emptyTrashModal span.heading{
+    white-space: no-wrap;
 }
 
 .emptyTrashModal span{

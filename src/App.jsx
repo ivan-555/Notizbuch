@@ -1,16 +1,21 @@
+// Hooks
+import { useLocalStorage } from "./hooks/useLocalStorage";
 import { useState } from "react"
+// Styles
 import "./variables.css"
-import "./app.css"
 import "./index.css"
+import styles from "./app.css"
+// Components
 import NewNoteModal from "./components/NewNoteModal/NewNoteModal"
 import NewKatModal from "./components/NewKatModal/NewKatModal"
 import DeleteKatModal from "./components/DeleteKatModal/DeleteKatModal"
 import Sidebar from "./components/Sidebar/Sidebar"
 import NotesList from "./components/NotesList/NotesList"
 import EmptyTrashModal from "./components/EmptyTrashModal/EmptyTrashModal"
-import { useLocalStorage } from "./hooks/useLocalStorage";
+
 
 const App = () => {
+  // States
   const [allNotes, setAllNotes] = useLocalStorage("notes", []);
   const [kategories, setKategories] = useLocalStorage("categories", []);
   const [trash, setTrash] = useLocalStorage("trash", []);
@@ -22,7 +27,8 @@ const App = () => {
   const [emptyTrashModal, setEmptyTrashModal] = useState("closed")
 
   return (
-    <div className='notebook'>
+    <div className={styles.notebook}>
+      <h1 className={styles.heading}>Notizbuch</h1>
 
       {/* ----- Modals ------------*/}
       {
@@ -54,7 +60,7 @@ const App = () => {
       
       <NotesList currentFilter={currentFilter} allNotes={allNotes} setAllNotes={setAllNotes} setTrash={setTrash} trash={trash} kategories={kategories} setEmptyTrashModal={setEmptyTrashModal}/>
 
-      <button className="newNoteButton" onClick={() => setNewNoteModalStatus("open")}><i className="fa-solid fa-pen-to-square"></i></button>
+      <button className={styles.newNoteButton} onClick={() => setNewNoteModalStatus("open")}><i className="fa-solid fa-pen-to-square"></i></button>
     </div>
   )
 }

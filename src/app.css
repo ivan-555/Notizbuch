@@ -4,6 +4,14 @@
     background: var(--bg-color);
 }
 
+.notebook h1.heading{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
 .notebook .newNoteButton i{
     padding: 15px;
     font-size: 1.3rem;
@@ -14,4 +22,16 @@
     position: absolute;
     right: 50px;
     bottom: 50px;
+}
+
+/* At toggleable Sidebar */
+@media (max-width: 1145px) {
+    .notebook h1.heading{
+        display: block;
+    }
+
+    .notebook .newNoteButton i{
+        right: 15px;
+        bottom: 15px;
+    }
 }
