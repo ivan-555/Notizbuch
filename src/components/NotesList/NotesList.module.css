@@ -46,7 +46,7 @@
 /* At toggleable Sidebar */
 @media (max-width: 1145px) {
     .notesList{
-        margin-top: 75px;
+        margin-top: 65px;
     }
 
     .notesList .inner{

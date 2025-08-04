@@ -6,7 +6,7 @@
 
 .notebook h1.heading{
     position: absolute;
-    top: 20px;
+    top: 15px;
     left: 50%;
     transform: translateX(-50%);
     display: none;
@@ -31,7 +31,7 @@
     }
 
     .notebook .newNoteButton i{
-        right: 15px;
-        bottom: 15px;
+        right: 10px;
+        bottom: 10px;
     }
 }

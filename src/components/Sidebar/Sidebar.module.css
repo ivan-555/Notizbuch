@@ -5,10 +5,10 @@
     margin-right: 5px;
     border-radius: 5px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    min-width: 300px;
+    min-width: 280px;
     padding: 0 10px;
-    padding-bottom: 10px;
-    padding-top: 5px;
+    padding-bottom: 53px; /* Absolute Trash Button Space */
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -16,40 +16,48 @@
 }
 
 .sidebar .hamburger {
-  cursor: pointer;
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    display: none;
+    transform: translateX(100%);
+    background: var(--dark-color);
+    border-radius: 5px;
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sidebar .hamburger svg {
-  height: 2em;
-  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    height: 2em;
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sidebar .hamburger .line {
-  fill: none;
-  stroke: var(--dark-color);
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 3;
-  /* transition for transforming the Stroke */
-  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill: none;
+    stroke: var(--light-color);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    /* transition for transforming the Stroke */
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
               stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sidebar .hamburger .lineTopBottom {
-  stroke-dasharray: 12 63;
+    stroke-dasharray: 12 63;
 }
 
 /* To X */
 .sidebar .hamburger svg.x {
-  transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 .sidebar .hamburger svg.x .lineTopBottom {
-  stroke-dasharray: 20 300;
-  stroke-dashoffset: -32.42;
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
 }
 
 .sidebar h1{
@@ -100,7 +108,7 @@
 .sidebar .filters .deleteButton{
     font-size: .9rem;
     position: absolute;
-    right: 10px;
+    right: 5px;
     cursor: pointer;
 }
 
@@ -112,6 +120,13 @@
     gap: 10px;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.sidebar .trashButton{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
 }
 
 /* Sidebar Toggle */
@@ -136,18 +151,5 @@
 
     .sidebar .hamburger{
         display: block;
-        right: -15px;
-        transform: translateX(100%);
-        background: var(--dark-color);
-        border-radius: 5px;
-        width: 45px;
-        height: 45px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .sidebar .hamburger .line{
-        stroke: var(--light-color);
     }
 }

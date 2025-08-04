@@ -37,7 +37,7 @@ const Sidebar = ({setCurrentFilter, currentFilter, kategories, setDeleteKatModal
           }
         </ul>
         <button className={styles.addLabelButton} onClick={() => {setNewKatModalStatus("open"); setSidebarStatus("closed")}}><i className="fa-regular fa-plus"></i>Neues Label</button>
-        <li onClick={(e) => {setCurrentFilter("Trash")}} className={currentFilter === "Trash" ? styles.active : ""}><i className="fa-solid fa-trash-can"></i>Papierkorb</li>
+        <li onClick={(e) => {setCurrentFilter("Trash")}} className={`${currentFilter === "Trash" ? styles.active : ""} ${styles.trashButton}`}><i className="fa-solid fa-trash-can"></i>Papierkorb</li>
     </div>
   )
 }
