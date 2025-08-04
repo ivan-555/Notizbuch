@@ -12,6 +12,7 @@ import DeleteKatModal from "./components/DeleteKatModal/DeleteKatModal"
 import Sidebar from "./components/Sidebar/Sidebar"
 import NotesList from "./components/NotesList/NotesList"
 import EmptyTrashModal from "./components/EmptyTrashModal/EmptyTrashModal"
+import Preloader from "./components/Preloader/Preloader";
 
 
 const App = () => {
@@ -28,6 +29,8 @@ const App = () => {
 
   return (
     <div className={styles.notebook}>
+      <Preloader/>
+
       <h1 className={styles.heading}>Notizbuch</h1>
 
       {/* ----- Modals ------------*/}
