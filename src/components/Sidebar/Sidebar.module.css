@@ -97,7 +97,6 @@
 
 .sidebar  .filters{
     overflow-y: auto;
-    padding-right: 5px;
 }
 
 .sidebar .filters i.tag{
@@ -107,7 +106,7 @@
 .sidebar .filters .deleteButton{
     font-size: .9rem;
     position: absolute;
-    right: 5px;
+    right: 10px;
     cursor: pointer;
 }
 
