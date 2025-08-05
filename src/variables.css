@@ -1,6 +1,6 @@
 :root{
     --light-color: rgb(247, 246, 246);
-    --bg-color: #0000000f;
+    --bg-color: #f1f1f1;
     --dark-color: #4b4948;
     --soft-dark-color: rgb(107, 106, 106); /* borders */
     --warning-color: rgba(243, 124, 124, 0.68); /* invalid */

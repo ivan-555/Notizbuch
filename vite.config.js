@@ -14,10 +14,10 @@ export default defineConfig({
       ],
       manifest: {
         name: 'Notizbuch',
-        short_name: 'Notes',
+        short_name: 'Notizbuch',
         description: 'React Notizbuch',
-        theme_color: '#4b4948',
-        background_color: '#0000000f',
+        theme_color: '#f1f1f1',
+        background_color: '#f1f1f1',
         display: 'standalone',
         start_url: '.',
         icons: [
